@@ -14,6 +14,7 @@ RUN npm install
 COPY . .
 
 # Build the React app
+RUN curl -v https://registry.npmjs.com/
 RUN npm run build
 
 # Expose port 3000 (or the port your app is configured to listen on)
